@@ -14,7 +14,7 @@
 的接口实现，关于`browserlist`的语法可以查看[这里](https://github.com/browserslist/browserslist)，这里可以查看语法对应的浏览器占比[https://browserl.ist/?q=defaults](https://browserl.ist/?q=defaults)，在`@babel/perset-env`出来之前，更多是手动引入`@babel/transform-xxx`的插件去进行编译转换兼容。
 
 `browserlist`配置方式：
-1） `package.json`配置:
+1) `package.json`配置:
 ```
 {
   "browserslist": [
@@ -30,7 +30,7 @@ last 2 version
 > 5%
 not ie < 9
 ```
-3）直接在`@babel/preset-env`的options参数配置：
+3) 直接在`@babel/preset-env`的options参数配置：
 ```
 [
   '@babel/preset-env',
@@ -134,6 +134,7 @@ plugins: {
     // moduleName: require.resolve('babel-runtime/package')
   },
 }
+```
 这里的坑点在于要理解里面几个参数的意义：
 ### 1.helpers
 
